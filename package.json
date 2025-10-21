@@ -1,0 +1,54 @@
+{
+  "name": "wizdesk",
+  "version": "1.0.0",
+  "description": "Team Task Management System - Efficient team collaboration and task management platform",
+  "main": "backend/index.js",
+  "scripts": {
+    "start": "node backend/index.js",
+    "dev": "nodemon backend/index.js",
+    "setup": "node backend/scripts/setup.js",
+    "build": "echo 'No build step required for Node.js application' && exit 0",
+    "test": "echo \"No tests specified yet\" && exit 0",
+    "render-build": "npm install",
+    "prod": "NODE_ENV=production node backend/index.js",
+    "test-email": "node backend/test-email.js"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.6",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "keywords": [
+    "task-management",
+    "team-collaboration",
+    "productivity",
+    "project-management",
+    "team-tasks",
+    "wizdesk",
+    "workflow",
+    "agile"
+  ],
+  "author": "Rohan Devadiga <wizdeskofficial@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wizdeskofficial/wizdesk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wizdeskofficial/wizdesk/issues"
+  },
+  "homepage": "https://wizdesk.onrender.com"
+}
